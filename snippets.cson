@@ -1,0 +1,156 @@
+".source.js":
+	# JavaScript general
+	"import { _ } from 'module'":
+		prefix: "imd"
+		body: "import { $2 } from '$1';$0"
+
+	"import * as alias from 'module'":
+		prefix: "ime"
+		body: "import * as $2 from '$1';$0"
+
+	"import moduleName from 'module'":
+		prefix: "imp"
+		body: "import $2 from '$1';$0"
+
+	"import React from 'react'":
+		prefix: "imr"
+		body: "import React from 'react';$0"
+
+	"import PropTypes from 'prop-types'":
+		prefix: "impt"
+		body: "import PropTypes from 'prop-types';$0"
+
+	"import * as R from 'ramda'":
+		prefix: "imra"
+		body: "import * as R from 'ramda';$0"
+
+	"import { useDispatch, useSelector } from 'react-redux'":
+		prefix: "imrr"
+		body: "import { useDispatch, useSelector } from 'react-redux';$0"
+
+	"console.log('object', object);":
+		prefix: "clo"
+		body: "console.log('$1', $1);$0"
+
+	"export default function functionName":
+		prefix: "ednf"
+		body: '''
+			export default function $1() {
+			  $0
+			}
+		'''
+
+	# React
+	"name.propTypes = {}":
+		prefix: "ptcon"
+		body: '''
+			$1.propTypes = {
+			  $0
+			};
+		'''
+
+	"React Function Component":
+		prefix: "rfc"
+		body: '''
+			import React from 'react';
+
+			export default function $1() {
+			  return <div>$1</div>;
+			}$0
+		'''
+
+	"React Function Component with PropTypes":
+		prefix: "rfcp"
+		body: '''
+			import React from 'react';
+			import PropTypes from 'prop-types';
+
+			$1.propTypes = {
+				$0
+			};
+
+			export default function $1({}) {
+			  return <div>$1</div>;
+			}
+		'''
+
+	"PropTypes.array":
+		prefix: "pta"
+		body: "PropTypes.array,$0"
+
+	"PropTypes.array.isRequired":
+		prefix: "ptar"
+		body: "PropTypes.array.isRequired,$0"
+
+	"PropTypes.number":
+		prefix: "ptn"
+		body: "PropTypes.number,$0"
+
+	"PropTypes.number.isRequired":
+		prefix: "ptnr"
+		body: "PropTypes.number.isRequired,$0"
+
+	"PropTypes.bool":
+		prefix: "ptb"
+		body: "PropTypes.bool,$0"
+
+	"PropTypes.bool.isRequired":
+		prefix: "ptbr"
+		body: "PropTypes.bool.isRequired,$0"
+
+	"PropTypes.func":
+		prefix: "ptf"
+		body: "PropTypes.func,$0"
+
+	"PropTypes.func.isRequired":
+		prefix: "ptfr"
+		body: "PropTypes.func.isRequired,$0"
+
+	"PropTypes.string":
+		prefix: "pts"
+		body: "PropTypes.string,$0"
+
+	"PropTypes.string.isRequired":
+		prefix: "ptsr"
+		body: "PropTypes.string.isRequired,$0"
+
+	"PropTypes.object":
+		prefix: "pto"
+		body: "PropTypes.object,$0"
+
+	"PropTypes.object.isRequired":
+		prefix: "ptor"
+		body: "PropTypes.object.isRequired,$0"
+
+	"PropTypes.arrayOf(name)":
+		prefix: "ptao"
+		body: "PropTypes.arrayOf($1),$0"
+
+	"PropTypes.arrayOf(name).isRequired":
+		prefix: "ptaor"
+		body: "PropTypes.arrayOf($1).isRequired,$0"
+
+  # Testing
+	"describe('$1', () => {});":
+		prefix: "desc"
+		body: '''
+			describe('$1', () => {
+			  $0
+			});
+		'''
+
+	"test('$1', () => {});":
+		prefix: "test"
+		body: '''
+			test('$1', () => {
+			  $0
+			});
+		'''
+
+	"it('$1', () => {});":
+		prefix: "tit"
+		body: '''
+			it('$1', () => {
+			  $0
+			});
+		'''
