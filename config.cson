@@ -9,6 +9,13 @@
     scrollPastEnd: true
   "exception-reporting":
     userId: "7764dd77-7a19-4ff0-9610-519498776c9b"
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      whitelistedGlobs: [
+        "*.js"
+        "*.scss"
+      ]
   welcome:
     showOnStartup: false
   zentabs:
