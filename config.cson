@@ -1,4 +1,6 @@
 "*":
+  "autocomplete-plus":
+    autoActivationDelay: 500
   core:
     telemetryConsent: "no"
     themes: [
