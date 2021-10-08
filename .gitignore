@@ -6,3 +6,6 @@
 !init.js
 !keymap.cson
 !snippets.cson
+!backup-packages.sh
+!restore-packages.sh
+!package.list
