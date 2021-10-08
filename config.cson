@@ -1,7 +1,12 @@
 "*":
   core:
     telemetryConsent: "no"
+  editor:
+    scrollPastEnd: true
   "exception-reporting":
     userId: "7764dd77-7a19-4ff0-9610-519498776c9b"
   welcome:
     showOnStartup: false
+  zentabs:
+    neverCloseNew: true
+    neverCloseUnsaved: true
