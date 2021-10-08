@@ -2,3 +2,7 @@
 !config.cson
 !README.md
 !install.sh
+!styles.less
+!init.js
+!keymap.cson
+!snippets.cson
