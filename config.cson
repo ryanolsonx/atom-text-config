@@ -1,4 +1,5 @@
 "*":
+  autoclose: {}
   "autocomplete-plus":
     autoActivationDelay: 500
   core:
@@ -11,6 +12,9 @@
     scrollPastEnd: true
   "exception-reporting":
     userId: "7764dd77-7a19-4ff0-9610-519498776c9b"
+  "highlight-selected":
+    lightTheme: true
+  "linter-ui-default": {}
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true

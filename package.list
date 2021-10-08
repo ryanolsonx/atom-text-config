@@ -1,8 +1,11 @@
 atomizr@0.23.3
+autoclose-tags@0.2.4
 busy-signal@2.0.1
 expand-region@0.5.0
+highlight-selected@0.17.0
 intentions@2.1.1
 linter@3.4.0
 linter-ui-default@3.4.1
+minimap@4.40.0
 prettier-atom@0.60.1
 zentabs@0.8.9
