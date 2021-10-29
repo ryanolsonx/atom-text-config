@@ -154,3 +154,20 @@
 			  $0
 			});
 		'''
+
+	# Redux
+	"Redux Flag Action":
+		prefix: "rxfa"
+		body: '''
+		  $1(state) {
+	      state.$2 = true;
+	    },
+
+	    $1Success(state) {
+	      state.$2 = false;
+	    },
+
+	    $1Failure(state) {
+	      state.$2 = false;
+	    },$0
+		'''

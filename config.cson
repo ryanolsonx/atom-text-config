@@ -3,10 +3,16 @@
   "autocomplete-plus":
     autoActivationDelay: 500
   core:
+    disabledPackages: [
+      "language-todo"
+    ]
+    packagesWithSnippetsDisabled: [
+      "language-todo"
+    ]
     telemetryConsent: "no"
     themes: [
       "one-light-ui"
-      "one-light-syntax"
+      "evan-syntax"
     ]
   editor:
     scrollPastEnd: true
@@ -14,7 +20,10 @@
     userId: "7764dd77-7a19-4ff0-9610-519498776c9b"
   "highlight-selected":
     lightTheme: true
+  "language-elm":
+    autocompleteEnabled: false
   "linter-ui-default": {}
+  minimap: {}
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
@@ -24,6 +33,8 @@
       ]
   welcome:
     showOnStartup: false
+  "wrap-guide":
+    enabled: false
   zentabs:
     neverCloseNew: true
     neverCloseUnsaved: true

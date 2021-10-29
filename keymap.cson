@@ -2,3 +2,9 @@
   'alt-up': 'expand-region:expand'
   'alt-down': 'expand-region:shrink'
   'ctrl-v': 'core:page-down'
+  'ctrl-0': 'pane:close'
+  'ctrl-2': 'pane:split-down-and-copy-active-item'
+  'ctrl-3': 'pane:split-right-and-copy-active-item'
+
+'body':
+  'ctrl-o': 'window:focus-next-pane'
